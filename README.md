@@ -11,13 +11,13 @@ Deciding what to watch can be the most difficult part of movie night. Ultimately
 finding the right film comes down to personal preference,
 but I’ve rounded up some insights to consider when you’re searching about the movie(s).
 
---> Genre
---> IMDB Rating
---> Cast
---> Certifications
---> Ratings
---> Duration
+1)Genre
+2)IMDB Rating
+3)Cast
+4)Certifications
+5)Ratings
+6)Duration
 
-Install the requirements in the requirements.txt and you are all set.
+Install the requirements by running 'pip install -r requirements.txt' and you are all set.
 
                 
