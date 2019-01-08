@@ -9,15 +9,15 @@ Have you ever been confused by a large array of movies about which you know noth
                 
 Deciding what to watch can be the most difficult part of movie night. Ultimately, 
 finding the right film comes down to personal preference,
-but I’ve rounded up some insights to consider when you’re searching about the movie(s).
+but Iâ€™ve rounded up some insights to consider when youâ€™re searching about the movie(s).
 
-# Genre
-# IMDB Rating
-# Cast
-# Certifications
-# Ratings
-# Duration
+--> Genre
+--> IMDB Rating
+--> Cast
+--> Certifications
+--> Ratings
+--> Duration
 
-Here is some of the comparison graphs of few movies -
+Install the requirements in the requirements.txt and you are all set.
 
                 
