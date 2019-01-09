@@ -17,7 +17,6 @@ import numpy as np
 import urllib.request
 import time
 import datetime
-
 def actual_name(response):
     movie_page=BeautifulSoup(response.text, 'lxml')
     title_bar=movie_page.find('div',class_='title_wrapper')
