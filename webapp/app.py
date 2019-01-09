@@ -59,25 +59,27 @@ def release_year(response):
     
     
 def imdb_cast(response):
-    txt=response.text
-    start = [m.start() for m in re.finditer('Stars', txt)]
-    txt=txt[start[0]::]
-    end = [m.start() for m in re.finditer('<span', txt)]
-    txt=txt[0:end[0]]
-    end = [m.start() for m in re.finditer('<a', txt)]
-    txt=txt[end[0]::]
-    l=[];
-    while(len(txt)>0):
-        try:
-            end = [m.start() for m in re.finditer('>', txt)]
-            txt=txt[end[0]+1::]
-            end = [m.start() for m in re.finditer('<', txt)]
-            l.append(txt[0:end[0]])
-            end = [m.start() for m in re.finditer('<a', txt)]
-            txt=txt[end[0]::]
-        except IndexError:
-            break
-        
+    l=[]
+    try:
+        txt=response.text
+        start = [m.start() for m in re.finditer('Stars', txt)]
+        txt=txt[start[0]::]
+        end = [m.start() for m in re.finditer('<span', txt)]
+        txt=txt[0:end[0]]
+        end = [m.start() for m in re.finditer('<a', txt)]
+        txt=txt[end[0]::]
+        while(len(txt)>0):
+            try:
+                end = [m.start() for m in re.finditer('>', txt)]
+                txt=txt[end[0]+1::]
+                end = [m.start() for m in re.finditer('<', txt)]
+                l.append(txt[0:end[0]])
+                end = [m.start() for m in re.finditer('<a', txt)]
+                txt=txt[end[0]::]
+            except IndexError:
+                break
+    except IndexError:
+        return l            
     return l
 
 def wiki_cast(response):
