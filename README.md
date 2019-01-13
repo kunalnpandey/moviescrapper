@@ -11,12 +11,12 @@ Deciding what to watch can be the most difficult part of movie night. Ultimately
 finding the right film comes down to personal preference,
 but I’ve rounded up some insights to consider when you’re searching about the movie(s).
 
---Genre
---IMDB Rating
---Cast
---Certifications
---Ratings
---Duration
+--Genre  
+--IMDB Rating  
+--Cast  
+--Certifications  
+--Ratings  
+--Duration  
 
 Movie Details.py --- Fetches Complete Details about any movie(s)(incuding the movie poster).
 Episode Status.py --- It takes name of TV series as input and will give you the information about
